@@ -1,0 +1,78 @@
+/*
+    Document   : islandora_basic_collection.theme
+    Created on : Mar 17, 2015
+    Description: The xml page is a simple flexible layout page
+    that breaks down to two columns when 2 sidebars are visible
+*/
+
+.islandora-xml-content {
+  background-color: #F2F2F2;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  float: left;
+  width: auto;
+  max-width: 100%;
+}
+
+.islandora-xml-content img {
+  margin: 0;
+  display: block;
+}
+
+.islandora-xml-metadata {
+  display: block;
+  clear: both;
+}
+
+/* This is kept for legacy reasons */
+dl.islandora-xml-fields {
+  width:100%;
+}
+
+dl.islandora-metadata-fields {
+  width:100%;
+}
+
+.islandora-xml-metadata dt {
+  font-weight: normal;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.islandora-xml-metadata dd {
+  padding-left: 40px;
+}
+
+
+.islandora-xml-metadata dt,
+.islandora-xml-metadata dd {
+  border-top:1px solid #e5e5e5;
+}
+
+.islandora-xml-metadata dt.first,
+.islandora-xml-metadata dd.first {
+  border-top:0;
+}
+
+body.two-sidebars .islandora-xml-sidebar {
+    clear: both;
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+
+  body.no-sidebars .islandora-xml-sidebar {
+    padding-left: 20px;
+  }
+
+  body.no-sidebars .islandora-xml-sidebar {
+    float: right; /* LTR */
+    width: 35%;
+    clear: none;
+  }
+
+}
