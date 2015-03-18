@@ -45,7 +45,9 @@ function islandora_xml_preprocess_islandora_xml(array &$variables) {
       'title' => $islandora_object->label,
       'path' => $xml_url,
     );
-    $variables['islandora_content'] = theme('xml', $params);
+    $xml_str = trim($islandora_object['XML']->content);
+    $command = "echo '$xml_str' | seria -y -";
+    $variables['islandora_content'] = shell_exec($command);
   }
   else {
     $variables['islandora_content'] = NULL;

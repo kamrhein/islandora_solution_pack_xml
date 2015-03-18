@@ -8,12 +8,15 @@
  */
 ?>
 
-<div class="islandora-xml-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/">
+<div class="islandora-xml-object islandora" >
   <div class="islandora-xml-content-wrapper clearfix">
     <?php if (isset($islandora_content)): ?>
-      <div class="islandora-xml-content">
-        <?php print $islandora_content; ?>
-      </div>
+      <fieldset class="collapsible collapsed" style="display: block; clear:both">
+      <legend><span class="fieldset-legend"><?php print t('XML content'); ?></span></legend>
+        <div class="fieldset-wrapper">
+          <pre><?php print $islandora_content; ?></pre>
+        </div>
+      </fieldset>
     <?php endif; ?>
   </div>
   <div class="islandora-xml-metadata">

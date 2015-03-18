@@ -11,6 +11,7 @@ This module requires the following modules/libraries:
 * [Islandora](https://github.com/islandora/islandora)
 * [Tuque](https://github.com/islandora/tuque)
 
+* [Seria](https://github.com/rtluckie/seria)
 
 ## Installation
 
