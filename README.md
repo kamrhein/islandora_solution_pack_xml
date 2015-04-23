@@ -1,4 +1,4 @@
-# XML Solution Pack [![Build Status](https://travis-ci.org/Islandora/islandora_solution_pack_xml.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_solution_pack_xml)
+# Islandora XML Solution Pack 
 
 ## Introduction
 
@@ -19,6 +19,7 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 ## Configuration
 
+N/A
 
 ## Troubleshooting/Issues
 

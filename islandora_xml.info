@@ -3,6 +3,5 @@ description = "An Islandora Repository module to handle XML-files"
 dependencies[] = islandora
 package = Islandora Solution Packs
 core = 7.x
-version = 7.x-1.4
-configure = admin/islandora/solution_pack_config/xml
+version = 7.x
 stylesheets[all][] = css/islandora_xml.theme.css
