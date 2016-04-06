@@ -14,7 +14,7 @@
       <fieldset class="collapsible collapsed" style="display: block; clear:both">
       <legend><span class="fieldset-legend"><?php print t('XML content'); ?></span></legend>
         <div class="fieldset-wrapper">
-          <pre><?php print $islandora_content; ?></pre>
+          <pre style="white-space: pre-wrap;"><?php print $islandora_content; ?></pre>
         </div>
       </fieldset>
     <?php endif; ?>
